@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\My Hotel",
+    "\\My Hotel\\DataLayer",
+    "\\My Hotel\\DataLayer\\Models",
     "\\My Hotel\\My Hotel"
   ],
-  "SelectedNode": "\\My Hotel\\My Hotel\\Main.cs",
+  "SelectedNode": "\\My Hotel\\DataLayer\\Models\\Guest.cs",
   "PreviewInSolutionExplorer": false
 }
