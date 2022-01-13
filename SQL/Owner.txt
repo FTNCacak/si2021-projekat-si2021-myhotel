@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[Owner]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [First Name] NVARCHAR(30) NOT NULL, 
+    [Last Name] NVARCHAR(40) NOT NULL, 
+    [Phone number] NVARCHAR(20) NOT NULL, 
+    [Email] NVARCHAR(40) NOT NULL
+)

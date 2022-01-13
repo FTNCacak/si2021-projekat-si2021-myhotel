@@ -1,0 +1,7 @@
+CREATE TABLE [dbo].[Appartment]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Adress] NVARCHAR(50) NOT NULL, 
+    [Type] NVARCHAR(50) NOT NULL, 
+    [Price] FLOAT NOT NULL
+)

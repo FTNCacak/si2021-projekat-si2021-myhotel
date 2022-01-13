@@ -1,0 +1,7 @@
+CREATE TABLE [dbo].[Guest] (
+    [Id] INT NOT NULL PRIMARY KEY IDENTITY,
+    [First name]   NVARCHAR (25) NOT NULL,
+    [Last name]    NVARCHAR (30) NOT NULL,
+    [Phone number] NVARCHAR (20) NOT NULL,
+    [Email]        NVARCHAR (50) NOT NULL,
+);
