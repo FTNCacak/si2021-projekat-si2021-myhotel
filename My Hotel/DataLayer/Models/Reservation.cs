@@ -8,8 +8,8 @@ namespace DataLayer.Models
 {
     public class Reservation
     {   
-        public string Id { get; set; }
-        public string GuestId { get; set; }
+        public int Id { get; set; }
+        public int GuestId { get; set; }
         public int ApartmentId { get; set; }
         public decimal Payment { get; set; }
         public DateTime BeginDate { get; set; }
