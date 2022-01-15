@@ -8,39 +8,41 @@ using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    public class ApartmentRepository
+    public class ReservationRepository
     {
         private string connectionString = "Data Source=(localdb)\\ProjectsV13;Initial Catalog=MyHotel;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        public List<Apartment> GetAllApartments()
+
+        public List<Reservation> GetAllReservations()
         {
-            List<Apartment> Apartments = new List<Apartment>();
+            List<Reservation> Reservations = new List<Reservation>();
 
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 sqlConnection.Open();
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = "SELECT * FROM Apartment";
+                sqlCommand.CommandText = "SELECT * FROM Reservation";
 
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
 
                 while (sqlDataReader.Read())
                 {
-                    Apartment Apartment = new Apartment();
-                    Apartment.Id = sqlDataReader.GetInt32(0);
-                    Apartment.Adress = sqlDataReader.GetString(1);
-                    Apartment.Type = sqlDataReader.GetString(2);
-                    Apartment.Price = sqlDataReader.GetDecimal(3);
+                    Reservation Reservation = new Reservation();
+                    Reservation.Id = sqlDataReader.GetInt32(0);
+                    Reservation.GuestId = sqlDataReader.GetInt32(1);
+                    Reservation.ApartmentId = sqlDataReader.GetInt32(2);
+                    Reservation.Payment = sqlDataReader.GetDecimal(3);
+                    Reservation.BeginDate = sqlDataReader.GetDateTime(4);
+                    Reservation.NumberOfDays = sqlDataReader.GetInt32(5);
 
-                    Apartments.Add(Apartment);
+                    Reservations.Add(Reservation);
                 }
 
                 sqlConnection.Close();
             }
 
-            return Apartments;
+            return Reservations;
         }
-
 
     }
 }

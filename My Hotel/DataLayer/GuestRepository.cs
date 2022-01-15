@@ -17,14 +17,14 @@ namespace DataLayer
                 sqlConnection.Open();
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = "SELECT * FROM Guests";
+                sqlCommand.CommandText = "SELECT * FROM Guest";
 
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
 
                 while (sqlDataReader.Read())
                 {
                     Guest guest = new Guest();
-                    guest.Id = sqlDataReader.GetString(0);
+                    guest.Id = sqlDataReader.GetInt32(0);
                     guest.FirstName = sqlDataReader.GetString(1);
                     guest.LastName = sqlDataReader.GetString(2);
                     guest.PhoneNumber = sqlDataReader.GetString(3);
