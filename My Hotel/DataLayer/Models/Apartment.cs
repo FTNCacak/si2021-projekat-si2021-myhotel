@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Models
 {
-    public class Appartment
+    public class Apartment
     {
+        public string Id { get; set; }
         public string Adress { get; set;}
         public string Type { get; set; }
-        public float Price {get; set;}
+        public decimal Price {get; set;}
     }
 }
