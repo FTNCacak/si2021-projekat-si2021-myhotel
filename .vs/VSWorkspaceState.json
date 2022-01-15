@@ -3,9 +3,8 @@
     "",
     "\\My Hotel",
     "\\My Hotel\\DataLayer",
-    "\\My Hotel\\DataLayer\\Models",
-    "\\My Hotel\\My Hotel"
+    "\\My Hotel\\DataLayer\\Models"
   ],
-  "SelectedNode": "\\My Hotel\\DataLayer\\Models\\Guest.cs",
+  "SelectedNode": "\\My Hotel\\DataLayer\\Models\\Reservation.cs",
   "PreviewInSolutionExplorer": false
 }

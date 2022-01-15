@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 namespace DataLayer.Models
 {
     public class Reservation
-    {
+    {   
+        public string Id { get; set; }
         public string GuestId { get; set; }
-        public int AppartmentId { get; set; }
-        public float Payment { get; set; }
+        public int ApartmentId { get; set; }
+        public decimal Payment { get; set; }
         public DateTime BeginDate { get; set; }
-        public DateTime EndDate { get; set; }
+        public int NumberOfDays { get; set; }
+        
     }
 }
