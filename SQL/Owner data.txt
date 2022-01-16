@@ -1,0 +1,6 @@
+SET IDENTITY_INSERT [dbo].[Owner] ON
+INSERT INTO [dbo].[Owner] ([Id], [First Name], [Last Name], [Phone number], [Email]) VALUES (1, N'Aleksa', N'Aleksić', N'064/1121212', N'aleek@yahoo.com')
+INSERT INTO [dbo].[Owner] ([Id], [First Name], [Last Name], [Phone number], [Email]) VALUES (2, N'Goran', N'Matović', N'061/2123992', N'G.Matovic@gmail.com')
+INSERT INTO [dbo].[Owner] ([Id], [First Name], [Last Name], [Phone number], [Email]) VALUES (3, N'Marija', N'Alić', N'063/2123212', N'Alić-Marija@gmail.com')
+SET IDENTITY_INSERT [dbo].[Owner] OFF
+

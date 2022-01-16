@@ -42,10 +42,22 @@ namespace DataLayer
 
             return Owners;
         }
-    
-    
-    
-    
-    
+        public int InsertOwner(Owner owner)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                sqlConnection.Open();
+                {
+                    SqlCommand sqlCommand = new SqlCommand();
+                    sqlCommand.Connection = sqlConnection;
+                    sqlCommand.CommandText = string.Format("INSERT INTO Owner VALUES('{0}','{1}','{2}','{3}')", owner.FirstName, owner.LastName, owner.PhoneNumber, owner.Email);
+
+                    return sqlCommand.ExecuteNonQuery();
+                }
+
+            }
+        }
+
+
     }
 }

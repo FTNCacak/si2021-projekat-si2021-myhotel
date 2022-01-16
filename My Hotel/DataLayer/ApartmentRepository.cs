@@ -40,6 +40,21 @@ namespace DataLayer
 
             return Apartments;
         }
+        public int InsertApartment(Apartment Apartment)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                sqlConnection.Open();
+                {
+                    SqlCommand sqlCommand = new SqlCommand();
+                    sqlCommand.Connection = sqlConnection;
+                    sqlCommand.CommandText = string.Format("INSERT INTO Apartment VALUES('{0}','{1}',{2})", Apartment.Adress, Apartment.Type, Apartment.Price);
+
+                    return sqlCommand.ExecuteNonQuery();
+                }
+
+            }
+        }
 
 
     }

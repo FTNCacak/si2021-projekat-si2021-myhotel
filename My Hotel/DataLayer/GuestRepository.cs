@@ -38,6 +38,21 @@ namespace DataLayer
 
             return guests;
         }
+        public int InsertGuest(Guest guest)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                sqlConnection.Open();
+                {
+                    SqlCommand sqlCommand = new SqlCommand();
+                    sqlCommand.Connection = sqlConnection;
+                    sqlCommand.CommandText = string.Format("INSERT INTO Guest VALUES('{0}','{1}','{2}','{3}')",guest.FirstName,guest.LastName,guest.PhoneNumber,guest.Email);
+
+                    return sqlCommand.ExecuteNonQuery();
+                }
+                
+            }
+        }
 
 
     }
