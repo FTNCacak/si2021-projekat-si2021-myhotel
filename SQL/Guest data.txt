@@ -1,0 +1,6 @@
+SET IDENTITY_INSERT [dbo].[Guest] ON
+INSERT INTO [dbo].[Guest] ([Id], [First name], [Last name], [Phone number], [Email]) VALUES (1, N'Marko', N'Marković', N'064/11122233', N'markyMark@gmail.com')
+INSERT INTO [dbo].[Guest] ([Id], [First name], [Last name], [Phone number], [Email]) VALUES (3, N'Žarko', N'Žarković', N'061/23221122', N'žžarković@gmail.com')
+INSERT INTO [dbo].[Guest] ([Id], [First name], [Last name], [Phone number], [Email]) VALUES (4, N'Irena', N'Pavlović', N'069/23213122', N'Irenaaa122@gmail.com')
+INSERT INTO [dbo].[Guest] ([Id], [First name], [Last name], [Phone number], [Email]) VALUES (5, N'Ivan', N'Radonjić', N'062/33991231', N'Ivaaan212@hotmail.com')
+SET IDENTITY_INSERT [dbo].[Guest] OFF

@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[Reservation] (
+    [Id]             INT             IDENTITY (1, 1) NOT NULL,
+    [Payment]        DECIMAL (10, 2) NOT NULL,
+    [Begin Date]     DATETIME        NOT NULL,
+    [Number of Days] INT             NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_Guest] FOREIGN KEY ([Id]) REFERENCES [dbo].[Guest] ([Id]),
+    CONSTRAINT [FK_Apartment] FOREIGN KEY ([Id]) REFERENCES [dbo].[Apartment] ([Id])
+);
