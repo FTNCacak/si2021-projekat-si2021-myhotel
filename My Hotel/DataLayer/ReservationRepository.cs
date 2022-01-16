@@ -44,5 +44,35 @@ namespace DataLayer
             return Reservations;
         }
 
+        public int InsertReservation(Reservation Reservation)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                sqlConnection.Open();
+                {
+                    SqlCommand sqlCommand = new SqlCommand();
+                    sqlCommand.Connection = sqlConnection;
+                    sqlCommand.CommandText = string.Format("INSERT INTO Reservation VALUES({0},{1},{2},{3},{4})", Reservation.GuestId, Reservation.ApartmentId, Reservation.Payment, Reservation.BeginDate, Reservation.NumberOfDays);
+
+                    return sqlCommand.ExecuteNonQuery();
+                }
+
+            }
+        }
+
+        public int DeleteReservation(int id)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                sqlConnection.Open();
+
+                SqlCommand command = new SqlCommand();
+                command.Connection = sqlConnection;
+                command.CommandText = "DELETE FROM Reservation WHERE Id = " + id;
+
+                return command.ExecuteNonQuery();
+            }
+        }
     }
 }
+

@@ -1,0 +1,5 @@
+SET IDENTITY_INSERT [dbo].[Apartment] ON
+INSERT INTO [dbo].[Apartment] ([Id], [Adress], [Type], [Price]) VALUES (1, N'Mutapova 2 Čačak', N'Dvosoban', CAST(300.00 AS Decimal(10, 2)))
+INSERT INTO [dbo].[Apartment] ([Id], [Adress], [Type], [Price]) VALUES (2, N'Lomina 10 Čačak', N'Trosoban', CAST(450.00 AS Decimal(10, 2)))
+INSERT INTO [dbo].[Apartment] ([Id], [Adress], [Type], [Price]) VALUES (3, N'Moravska 13 Čačak', N'Jednosoban', CAST(200.00 AS Decimal(10, 2)))
+SET IDENTITY_INSERT [dbo].[Apartment] OFF
