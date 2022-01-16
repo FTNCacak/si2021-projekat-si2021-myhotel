@@ -8,3 +8,17 @@ C:\Users\lavs9\Desktop\Projekat iz SI\new projekat\MY Hotel\My Hotel\My Hotel\ob
 C:\Users\lavs9\Desktop\Projekat iz SI\new projekat\MY Hotel\My Hotel\My Hotel\obj\Debug\Presentation Layer.csproj.CoreCompileInputs.cache
 C:\Users\lavs9\Desktop\Projekat iz SI\new projekat\MY Hotel\My Hotel\My Hotel\obj\Debug\My Hotel.exe
 C:\Users\lavs9\Desktop\Projekat iz SI\new projekat\MY Hotel\My Hotel\My Hotel\obj\Debug\My Hotel.pdb
+C:\Users\lavs9\Desktop\tet\My Hotel\My Hotel\bin\Debug\My Hotel.exe.config
+C:\Users\lavs9\Desktop\tet\My Hotel\My Hotel\bin\Debug\My Hotel.exe
+C:\Users\lavs9\Desktop\tet\My Hotel\My Hotel\bin\Debug\My Hotel.pdb
+C:\Users\lavs9\Desktop\tet\My Hotel\My Hotel\obj\Debug\Presentation Layer.csproj.AssemblyReference.cache
+C:\Users\lavs9\Desktop\tet\My Hotel\My Hotel\obj\Debug\My_Hotel.Main.resources
+C:\Users\lavs9\Desktop\tet\My Hotel\My Hotel\obj\Debug\My_Hotel.Properties.Resources.resources
+C:\Users\lavs9\Desktop\tet\My Hotel\My Hotel\obj\Debug\Presentation Layer.csproj.GenerateResource.cache
+C:\Users\lavs9\Desktop\tet\My Hotel\My Hotel\obj\Debug\Presentation Layer.csproj.CoreCompileInputs.cache
+C:\Users\lavs9\Desktop\tet\My Hotel\My Hotel\obj\Debug\My Hotel.exe
+C:\Users\lavs9\Desktop\tet\My Hotel\My Hotel\obj\Debug\My Hotel.pdb
+C:\Users\lavs9\Desktop\tet\My Hotel\My Hotel\obj\Debug\My_Hotel.GuestsForm.resources
+C:\Users\lavs9\Desktop\tet\My Hotel\My Hotel\obj\Debug\My_Hotel.OwnersForm.resources
+C:\Users\lavs9\Desktop\tet\My Hotel\My Hotel\obj\Debug\My_Hotel.ApartmentForm.resources
+C:\Users\lavs9\Desktop\tet\My Hotel\My Hotel\obj\Debug\My_Hotel.ReservationForm.resources

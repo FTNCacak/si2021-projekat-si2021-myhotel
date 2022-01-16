@@ -41,9 +41,10 @@ namespace My_Hotel
             // pictureBox
             // 
             this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
-            this.pictureBox.Location = new System.Drawing.Point(181, 27);
+            this.pictureBox.Location = new System.Drawing.Point(164, 14);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(229, 220);
+            this.pictureBox.Size = new System.Drawing.Size(296, 266);
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
             // 
@@ -51,45 +52,52 @@ namespace My_Hotel
             // 
             this.button_Reservations.BackColor = System.Drawing.Color.LightGreen;
             this.button_Reservations.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Reservations.Location = new System.Drawing.Point(117, 253);
+            this.button_Reservations.Location = new System.Drawing.Point(65, 284);
+            this.button_Reservations.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_Reservations.Name = "button_Reservations";
-            this.button_Reservations.Size = new System.Drawing.Size(353, 61);
+            this.button_Reservations.Size = new System.Drawing.Size(468, 62);
             this.button_Reservations.TabIndex = 1;
             this.button_Reservations.Text = "Reservations";
             this.button_Reservations.UseVisualStyleBackColor = false;
             // 
             // button_Guests
             // 
-            this.button_Guests.BackColor = System.Drawing.Color.Moccasin;
+            this.button_Guests.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button_Guests.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Guests.Location = new System.Drawing.Point(12, 332);
+            this.button_Guests.Location = new System.Drawing.Point(15, 351);
+            this.button_Guests.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_Guests.Name = "button_Guests";
-            this.button_Guests.Size = new System.Drawing.Size(165, 87);
+            this.button_Guests.Size = new System.Drawing.Size(133, 87);
             this.button_Guests.TabIndex = 2;
             this.button_Guests.Text = "Guests";
             this.button_Guests.UseVisualStyleBackColor = false;
+            this.button_Guests.Click += new System.EventHandler(this.button_Guests_Click);
             // 
             // button_Owners
             // 
-            this.button_Owners.BackColor = System.Drawing.Color.Moccasin;
+            this.button_Owners.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button_Owners.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Owners.Location = new System.Drawing.Point(449, 332);
+            this.button_Owners.Location = new System.Drawing.Point(465, 351);
+            this.button_Owners.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_Owners.Name = "button_Owners";
-            this.button_Owners.Size = new System.Drawing.Size(158, 87);
+            this.button_Owners.Size = new System.Drawing.Size(139, 87);
             this.button_Owners.TabIndex = 3;
             this.button_Owners.Text = "Owners";
             this.button_Owners.UseVisualStyleBackColor = false;
+            this.button_Owners.Click += new System.EventHandler(this.button_Owners_Click);
             // 
             // button_Apartments
             // 
-            this.button_Apartments.BackColor = System.Drawing.Color.Moccasin;
+            this.button_Apartments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button_Apartments.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Apartments.Location = new System.Drawing.Point(215, 332);
+            this.button_Apartments.Location = new System.Drawing.Point(205, 351);
+            this.button_Apartments.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_Apartments.Name = "button_Apartments";
-            this.button_Apartments.Size = new System.Drawing.Size(180, 87);
+            this.button_Apartments.Size = new System.Drawing.Size(205, 87);
             this.button_Apartments.TabIndex = 4;
             this.button_Apartments.Text = "Apartments";
             this.button_Apartments.UseVisualStyleBackColor = false;
+            this.button_Apartments.Click += new System.EventHandler(this.button_Apartments_Click);
             // 
             // Main
             // 
@@ -103,6 +111,7 @@ namespace My_Hotel
             this.Controls.Add(this.button_Reservations);
             this.Controls.Add(this.pictureBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Main";
             this.Text = "My Hotel";
             this.Load += new System.EventHandler(this.Form1_Load);
