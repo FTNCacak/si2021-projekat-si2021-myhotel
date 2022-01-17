@@ -100,7 +100,7 @@ namespace My_Hotel
             // Button_Insert
             // 
             this.Button_Insert.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Insert.Location = new System.Drawing.Point(435, 193);
+            this.Button_Insert.Location = new System.Drawing.Point(459, 193);
             this.Button_Insert.Name = "Button_Insert";
             this.Button_Insert.Size = new System.Drawing.Size(125, 71);
             this.Button_Insert.TabIndex = 10;

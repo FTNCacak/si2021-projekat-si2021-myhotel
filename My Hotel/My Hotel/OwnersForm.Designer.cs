@@ -39,7 +39,7 @@ namespace My_Hotel
             this.textBox_PhoneNumber = new System.Windows.Forms.TextBox();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.Button_Insert = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button1_Refresh = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox_Owners
@@ -126,15 +126,15 @@ namespace My_Hotel
             this.Button_Insert.Text = "Insert";
             this.Button_Insert.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // button1_Refresh
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(391, 272);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 71);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Refresh";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1_Refresh.Location = new System.Drawing.Point(391, 272);
+            this.button1_Refresh.Name = "button1_Refresh";
+            this.button1_Refresh.Size = new System.Drawing.Size(149, 71);
+            this.button1_Refresh.TabIndex = 10;
+            this.button1_Refresh.Text = "Refresh";
+            this.button1_Refresh.UseVisualStyleBackColor = true;
             // 
             // OwnersForm
             // 
@@ -142,7 +142,7 @@ namespace My_Hotel
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(615, 409);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button1_Refresh);
             this.Controls.Add(this.Button_Insert);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.textBox_PhoneNumber);
@@ -173,6 +173,6 @@ namespace My_Hotel
         private System.Windows.Forms.TextBox textBox_PhoneNumber;
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Button Button_Insert;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button1_Refresh;
     }
 }

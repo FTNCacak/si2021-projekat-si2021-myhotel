@@ -36,5 +36,10 @@ namespace My_Hotel
         {
             new ApartmentForm().ShowDialog();
         }
+
+        private void button_Reservations_Click(object sender, EventArgs e)
+        {
+            new ReservationForm().ShowDialog();
+        }
     }
 }

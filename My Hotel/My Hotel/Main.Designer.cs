@@ -59,6 +59,7 @@ namespace My_Hotel
             this.button_Reservations.TabIndex = 1;
             this.button_Reservations.Text = "Reservations";
             this.button_Reservations.UseVisualStyleBackColor = false;
+            this.button_Reservations.Click += new System.EventHandler(this.button_Reservations_Click);
             // 
             // button_Guests
             // 
