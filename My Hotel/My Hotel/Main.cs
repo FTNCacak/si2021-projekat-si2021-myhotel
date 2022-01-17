@@ -19,7 +19,27 @@ namespace My_Hotel
 
         private void Form1_Load(object sender, EventArgs e)
         {
+           
+        }
 
+        private void button_Guests_Click(object sender, EventArgs e)
+        {
+            new GuestsForm().ShowDialog();
+        }
+
+        private void button_Owners_Click(object sender, EventArgs e)
+        {
+            new OwnersForm().ShowDialog();
+        }
+
+        private void button_Apartments_Click(object sender, EventArgs e)
+        {
+            new ApartmentForm().ShowDialog();
+        }
+
+        private void button_Reservations_Click(object sender, EventArgs e)
+        {
+            new ReservationForm().ShowDialog();
         }
     }
 }
