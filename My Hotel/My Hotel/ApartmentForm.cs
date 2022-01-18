@@ -21,5 +21,10 @@ namespace My_Hotel
         {
             
         }
+
+        private void Button_Insert_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
